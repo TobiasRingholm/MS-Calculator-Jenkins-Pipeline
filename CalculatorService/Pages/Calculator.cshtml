@@ -1,0 +1,163 @@
+@page
+@model CalculatorService.Pages.Calculator
+@{
+    ViewData["Title"] = "Calculator";
+}
+
+<h3>Calculator</h3>
+
+@if (Model.hasData)
+{
+    <p>Hello @Model.firstName @Model.lastName</p>
+    <p>We received your following message correctly</p>
+    <p>@Model.message</p>
+}
+
+<style>
+    .main-content {
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 80px;
+                align-items: center;
+                border-left: 2px solid #e0e0e0;
+            }
+    
+    .calculator-container, .history-section {
+        padding: 20px;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 22%;
+    }
+    
+    .history-section {
+                margin-left: 4%;
+                width: 48%;
+            }
+            
+                    textarea {
+                        height: 100px;
+                        width: 95%;
+                        padding: 10px;
+                        margin: 10px 0;
+                        border: none;
+                        border-radius: 8px;
+                        background-color: #f0f0f0;
+                        font-size: 16px;
+                        box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
+                        resize: none;
+                    }
+            
+                    .result-box {
+                        background-color: #e5e5e5;
+                    }
+            
+                    .buttons-container {
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                        gap: 10px;
+                        width: 90%;
+                    }
+            
+                    .buttons-container button {
+                        padding: 10px;
+                        border: none;
+                        border-radius: 8px;
+                        background-color: #e0e0e0;
+                        font-size: 16px;
+                        cursor: pointer;
+                    }
+            
+                    button.zero-button {
+                        grid-column: 1 / 3;
+                    }
+</style>
+
+<div class="container">
+    <form method="POST">
+        <label for="fname"> First Name </label><br>
+        <input type="text" id="fname" name="firstname"/><br>
+
+        <label for="lname"> Last Name </label><br>
+        <input type="text" id="lname" name="lastname"/><br>
+
+
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" style="height:200px"></textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+<div class="main-content">
+    <div class="calculator-container">
+        <textarea readonly class="result-box" id="result"></textarea>
+        <textarea readonly id="input"></textarea>
+        <div class="buttons-container">
+            <button onclick="addCharacter('7')">7</button>
+            <button onclick="addCharacter('8')">8</button>
+            <button onclick="addCharacter('9')">9</button>
+            <button onclick="clearInput()">C</button>
+            <button onclick="addCharacter('4')">4</button>
+            <button onclick="addCharacter('5')">5</button>
+            <button onclick="addCharacter('6')">6</button>
+            <button onclick="addCharacter('-')">-</button>
+            <button onclick="addCharacter('1')">1</button>
+            <button onclick="addCharacter('2')">2</button>
+            <button onclick="addCharacter('3')">3</button>
+            <button onclick="addCharacter('+')">+</button>
+            <button class="zero-button" onclick="addCharacter('0')">0</button>
+            <button onclick="addCharacter(',')">,</button>
+            <button onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <div class="history-section">
+        <h2>Historik</h2>
+        <textarea readonly id="history"></textarea>
+    </div>
+</div>
+
+
+<script>
+function addCharacter(character) {
+    document.getElementById('input').value += character;
+}
+
+function clearInput() {
+    document.getElementById('input').value = '';
+}
+
+document.addEventListener('keydown', function(event) {
+let key = event.key;
+switch(key) {
+case '0':
+case '1':
+case '2':
+case '3':
+case '4':
+case '5':
+case '6':
+case '7':
+case '8':
+case '9':
+case '+':
+case '-':
+addCharacter(key);
+break;
+case ',':
+addCharacter(',');
+break;
+case 'Enter':
+calculate();
+break;
+case 'Backspace':
+let currentInput = document.getElementById('input').value;
+document.getElementById('input').value = currentInput.slice(0, -1);
+break;
+default:
+break;
+}
+});
+</script>

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Qkp8/+QGCFp1B/Tp9Wqh+f0e+ZWLGtEBgNS6pEuKx4PdIEXRYDqOr5ktxVbsllheg0z3u172x2oZHNL5sEt8Xg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Tobias\\Dropbox\\Files\\Dannelse\\Softwareudvikling - online\\Programmering\\Docker\\HelloWorld\\Scaled - HelloWorld\\Scaled - HelloWorld.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Tobias\\.nuget\\packages\\restsharp\\110.2.1-alpha.0.16\\restsharp.110.2.1-alpha.0.16.nupkg.sha512",
+    "C:\\Users\\Tobias\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\Tobias\\.nuget\\packages\\system.text.json\\7.0.3\\system.text.json.7.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

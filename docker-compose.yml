@@ -1,0 +1,44 @@
+﻿services:
+  console:
+    build:
+      context: .
+      dockerfile: Scaled - HelloWorld/Dockerfile
+    depends_on: 
+      - calculation-service
+  add-service:
+    build:
+      context: .
+      dockerfile: AddService/Dockerfile
+    deploy:
+      replicas: 2
+  subtract-service:
+    build:
+      context: .
+      dockerfile: SubtractService/Dockerfile
+    deploy:
+      replicas: 2
+  calculation-service:
+    build:
+      context: .
+      dockerfile: CalculationService/Dockerfile
+    depends_on:
+      - add-service
+      - subtract-service
+  calculator-service:
+    build:
+      context: .
+      dockerfile: CalculatorService/Dockerfile
+    depends_on:
+      - calculation-service
+    ports:
+      - 8080:80
+    
+  seq:
+    image: datalust/seq
+    ports:
+      - 5341:5341
+      - 5342:5342
+    volumes:
+      - rps_seq_data:/data
+    environment:
+      - ACCEPT_EULA=Y

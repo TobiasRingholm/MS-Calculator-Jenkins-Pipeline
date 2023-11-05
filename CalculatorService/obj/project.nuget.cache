@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "cpLcQyjYnJc8jyv+HgLDg2eqf8p3FxHKzBferttB7BSvQtRBSGYyHNzUBcOH2z0Rms3pj1huuGSHrbklsfY6Hw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Tobias\\Dropbox\\Files\\Dannelse\\Softwareudvikling - online\\Programmering\\Docker\\HelloWorld\\CalculatorService\\CalculatorService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Tobias\\.nuget\\packages\\restsharp\\110.2.1-alpha.0.16\\restsharp.110.2.1-alpha.0.16.nupkg.sha512",
+    "C:\\Users\\Tobias\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\Tobias\\.nuget\\packages\\system.text.json\\7.0.3\\system.text.json.7.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
