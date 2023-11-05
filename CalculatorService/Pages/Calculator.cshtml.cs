@@ -11,7 +11,7 @@ public class Calculator : PageModel
     
     [BindProperty]
     public string Input { get; set; }
-    
+
     public void OnGet()
     {
     }
@@ -39,44 +39,65 @@ public class Calculator : PageModel
             return Content("Error in calculation: " + ex.Message);
         }
     }
-    
+
     private static bool IsValidExpression(string input)
     {
         // En simpel regex for at checke for kun tal og tilladte operatorer (+ og -)
-        Regex validExpression = new Regex(@"^[\d\+\-]*$");
+        Regex validExpression = new Regex(@"^[\d\+\-\*\/]*$");
         return validExpression.IsMatch(input);
     }
-    
-    private static double CalculateExpression(string input)
+
+private static double CalculateExpression(string input)
+{
+    double result = 0;
+    double currentNumber = 0;
+    char operation = '+';
+
+    // Fjern alle mellemrum fra input for at undgå fejl ved parsing
+    input = input.Replace(" ", string.Empty);
+
+    for (int i = 0; i < input.Length; i++)
     {
-        // Du kan udvide denne funktion til at håndtere mere komplekse udtryk og flere operationer
-        // For nu kan den kun håndtere addition og subtraktion med hele tal
-        double result = 0;
-        double currentNumber = 0;
-        char currentOp = '+';
-
-        for (int i = 0; i < input.Length; i++)
+        if (char.IsDigit(input[i]) || input[i] == '.')
         {
-            if (char.IsDigit(input[i]))
+            // Byg det nuværende tal karakter for karakter
+            string numberStr = input[i].ToString();
+            while (i + 1 < input.Length && (char.IsDigit(input[i + 1]) || input[i + 1] == '.'))
             {
-                currentNumber = (currentNumber * 10) + (input[i] - '0');
+                numberStr += input[++i];
             }
 
-            if (!char.IsDigit(input[i]) || i == input.Length - 1)
+            // Konverter strengen til et tal
+            currentNumber = double.Parse(numberStr);
+            
+            // Udfør den forrige operation
+            if (operation == '+')
             {
-                if (currentOp == '+')
-                    result += currentNumber;
-                else if (currentOp == '-')
-                    result -= currentNumber;
-
-                currentNumber = 0;
-                if (i != input.Length - 1) 
-                    currentOp = input[i];
+                result += currentNumber;
             }
+            else if (operation == '-')
+            {
+                result -= currentNumber;
+            }
+
+            // Nulstil det nuværende tal
+            currentNumber = 0;
         }
-        
-        return result;
+        else if (input[i] == '+' || input[i] == '-')
+        {
+            // Gem den nuværende operation til næste gang
+            operation = input[i];
+        }
+        else
+        {
+            // Håndter ugyldige karakterer
+            throw new ArgumentException("Invalid character encountered in expression.");
+        }
     }
+
+    return result;
+}
+
     
     private static string? FetchCalculation()
     {
