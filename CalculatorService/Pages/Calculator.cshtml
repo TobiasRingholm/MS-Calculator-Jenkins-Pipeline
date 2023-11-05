@@ -99,7 +99,12 @@
 
 <script>
 function addCharacter(character) {
-    document.getElementById('input').value += character;
+    var inputField = document.getElementById('input');
+    if (character === ',') { // Replace comma with a dot for decimal
+        inputField.value += '.';
+    } else {
+        inputField.value += character;
+    }
 }
 
 function clearInput() {
