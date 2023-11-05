@@ -16,10 +16,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Tobias\Dropbox\Files\Dannelse\Softwareudvikling - online\Programmering\Docker\HelloWorld\CalculatorService
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Tobias/Dropbox/Files/Dannelse/Softwareudvikling - online/Programmering/Docker/HelloWorld/CalculatorService/Pages/About.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Tobias/Dropbox/Files/Dannelse/Softwareudvikling - online/Programmering/Docker/HelloWorld/CalculatorService/Pages/Calculator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FsY3VsYXRvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

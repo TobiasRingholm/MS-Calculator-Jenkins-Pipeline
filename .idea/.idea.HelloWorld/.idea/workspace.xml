@@ -23,8 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="214bee81-577b-4ad1-a0c1-ccb83e1154c6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/CalculatorService/Pages/Calculator.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorService/Pages/Calculator.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorService/bin/Debug/net7.0/CalculatorService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorService/bin/Debug/net7.0/CalculatorService.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorService/Pages/About.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorService/Pages/About.cshtml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorService/Pages/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorService/Pages/Shared/_Layout.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -541,6 +542,15 @@
       <workItem from="1699123188304" duration="9000" />
       <workItem from="1699183504369" duration="13740000" />
     </task>
+    <task id="LOCAL-00001" summary="Calc clean up">
+      <option name="closed" value="true" />
+      <created>1699200630824</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699200630825</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -549,5 +559,7 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Calc clean up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Calc clean up" />
   </component>
 </project>
