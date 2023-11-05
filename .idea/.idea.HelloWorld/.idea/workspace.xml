@@ -23,9 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="214bee81-577b-4ad1-a0c1-ccb83e1154c6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/CalculatorService/Pages/About.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorService/Pages/About.cshtml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorService/Pages/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorService/Pages/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HelloWorld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HelloWorld/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorService/Pages/Calculator.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorService/Pages/Calculator.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorService/Pages/Calculator.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorService/Pages/Calculator.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorService/bin/Debug/net7.0/CalculatorService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorService/bin/Debug/net7.0/CalculatorService.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorService/bin/Debug/net7.0/CalculatorService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorService/bin/Debug/net7.0/CalculatorService.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorService/obj/Debug/net7.0/CalculatorService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorService/obj/Debug/net7.0/CalculatorService.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorService/obj/Debug/net7.0/CalculatorService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorService/obj/Debug/net7.0/CalculatorService.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorService/obj/Debug/net7.0/ref/CalculatorService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorService/obj/Debug/net7.0/ref/CalculatorService.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorService/obj/Debug/net7.0/refint/CalculatorService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorService/obj/Debug/net7.0/refint/CalculatorService.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -550,7 +556,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699200630825</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Gui fixes">
+      <option name="closed" value="true" />
+      <created>1699204956180</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699204956180</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -560,6 +574,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Calc clean up" />
-    <option name="LAST_COMMIT_MESSAGE" value="Calc clean up" />
+    <MESSAGE value="Gui fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gui fixes" />
   </component>
 </project>
