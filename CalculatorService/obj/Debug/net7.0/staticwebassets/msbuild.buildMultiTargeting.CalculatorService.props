@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\CalculatorService.props" />
-</Project>

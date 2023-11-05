@@ -1,8 +1,4 @@
 ﻿services:
-  Monitoring:
-    build:
-      context: .
-      dockerfile: Monitoring/Dockerfile
   add-service:
     build:
       context: .
@@ -25,7 +21,7 @@
   calculator-service:
     build:
       context: .
-      dockerfile: CalculatorService/Dockerfile
+      dockerfile: CalculatorGUIService/Dockerfile
     depends_on:
       - calculation-service
     ports:
@@ -40,3 +36,7 @@
       - rps_seq_data:/data
     environment:
       - ACCEPT_EULA=Y
+
+volumes:
+  rps_seq_data:
+ 

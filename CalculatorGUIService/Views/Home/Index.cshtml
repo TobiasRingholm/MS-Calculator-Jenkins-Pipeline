@@ -1,0 +1,32 @@
+﻿@model CalculatorGUIService.Models.ParseExpression
+@{
+    ViewData["Title"] = "Home Page";
+}
+<form asp-action="Index">
+<div class="text-center">
+    <h1 class="display-4">Calculator</h1>
+    <p>
+        <label>First value</label>
+    </p>
+    <p>
+        <input type="number" step="0.01" asp-for="value1"/>
+    </p>
+
+    <p>
+        <label>Second value</label>
+    </p>
+    <p>
+        <input type="number" step="0.01" asp-for="value2"/>
+    </p>
+    
+    <p><input type="submit" value="Add" asp-for="calculate"/></p>
+    
+    <p><input type="submit" value="Subtract" asp-for="calculate"/></p>
+    <p>
+        <label>Result</label>
+    </p>
+    <p>
+        <input type="number" step="0.01" asp-for="@ViewData["result"]"/>
+    </p>
+</div>
+</form>

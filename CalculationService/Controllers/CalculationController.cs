@@ -10,29 +10,27 @@ public class CalculationController : ControllerBase
     private static RestClient AddRestClient = new RestClient("http://add-service/");
     private static RestClient SubtractRestClient = new RestClient("http://subtract-service/");
     
-    public string Get()
+    public double Get(double numberA, double numberB, string calculation)
     {
-        var add = FetchAdd(); 
-        var subtract = FetchSubtract(); 
-        
-        Console.WriteLine(Environment.MachineName);
-        Console.WriteLine($"{add}, {subtract}!");
-        return add + " " + subtract + "!";
+        if (calculation == "Add")
+        {
+            return (double)FetchAdd(numberA, numberB); 
+        }
+        else
+        {
+            return (double)FetchSubtract(numberA, numberB);
+        }
     }
     
-    private static string? FetchSubtract()
+    private static double? FetchSubtract(double numberA, double numberB)
     {
-        double numbera = 2.2;
-        double numberb = 4.2;
-        var task = SubtractRestClient.GetAsync<string>(new RestRequest($"Subtract?numberA={numbera}&numberB={numberb}"));
+        var task = SubtractRestClient.GetAsync<double>(new RestRequest($"Subtract?numberA={numberA}&numberB={numberB}"));
         return task.Result;
     }
     
-    private static string? FetchAdd()
+    private static double? FetchAdd(double numberA, double numberB)
     {
-        double numbera = 2.2;
-        double numberb = 2.2;
-        var task = AddRestClient.GetAsync<string>(new RestRequest($"Add?numberA={numbera}&numberB={numberb}"));
+        var task = AddRestClient.GetAsync<double>(new RestRequest($"Add?numberA={numberA}&numberB={numberB}"));
         return task.Result;
     }
 }

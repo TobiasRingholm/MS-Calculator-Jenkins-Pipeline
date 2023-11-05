@@ -11,9 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubtractService", "Subtract
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculationService", "CalculationService\CalculationService.csproj", "{BB461155-F350-4E60-AB4C-788C2C58CB4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorService", "CalculatorService\CalculatorService.csproj", "{1942D793-D58E-47FA-9BA9-C6BF3842CC48}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitoring", "Monitoring\Monitoring.csproj", "{CE17F608-1CCF-4296-AF5F-0059ADC8C66F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorGUIService", "CalculatorGUIService\CalculatorGUIService.csproj", "{F34FED9A-B347-4AB9-BBDC-67B7D7766254}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,13 +31,9 @@ Global
 		{BB461155-F350-4E60-AB4C-788C2C58CB4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB461155-F350-4E60-AB4C-788C2C58CB4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB461155-F350-4E60-AB4C-788C2C58CB4B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1942D793-D58E-47FA-9BA9-C6BF3842CC48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1942D793-D58E-47FA-9BA9-C6BF3842CC48}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1942D793-D58E-47FA-9BA9-C6BF3842CC48}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1942D793-D58E-47FA-9BA9-C6BF3842CC48}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CE17F608-1CCF-4296-AF5F-0059ADC8C66F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CE17F608-1CCF-4296-AF5F-0059ADC8C66F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CE17F608-1CCF-4296-AF5F-0059ADC8C66F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CE17F608-1CCF-4296-AF5F-0059ADC8C66F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F34FED9A-B347-4AB9-BBDC-67B7D7766254}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F34FED9A-B347-4AB9-BBDC-67B7D7766254}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F34FED9A-B347-4AB9-BBDC-67B7D7766254}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F34FED9A-B347-4AB9-BBDC-67B7D7766254}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
