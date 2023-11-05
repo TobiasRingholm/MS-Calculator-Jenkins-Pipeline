@@ -1,10 +1,8 @@
 ﻿services:
-  console:
+  Monitoring:
     build:
       context: .
-      dockerfile: Scaled - HelloWorld/Dockerfile
-    depends_on: 
-      - calculation-service
+      dockerfile: Monitoring/Dockerfile
   add-service:
     build:
       context: .

@@ -23,15 +23,135 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="214bee81-577b-4ad1-a0c1-ccb83e1154c6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Monitoring/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Monitoring/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Monitoring/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Monitoring/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HelloWorld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HelloWorld/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorService/Pages/Calculator.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorService/Pages/Calculator.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorService/Pages/Calculator.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorService/Pages/Calculator.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorService/bin/Debug/net7.0/CalculatorService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorService/bin/Debug/net7.0/CalculatorService.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorService/bin/Debug/net7.0/CalculatorService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorService/bin/Debug/net7.0/CalculatorService.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorService/obj/Debug/net7.0/CalculatorService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorService/obj/Debug/net7.0/CalculatorService.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorService/obj/Debug/net7.0/CalculatorService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorService/obj/Debug/net7.0/CalculatorService.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorService/obj/Debug/net7.0/ref/CalculatorService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorService/obj/Debug/net7.0/ref/CalculatorService.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorService/obj/Debug/net7.0/refint/CalculatorService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorService/obj/Debug/net7.0/refint/CalculatorService.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AddService/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AddService/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculationService/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CalculationService/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorService/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorService/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MS-Calculator.sln" beforeDir="false" afterPath="$PROJECT_DIR$/MS-Calculator.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scaled - HelloWorld/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scaled - HelloWorld/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scaled - HelloWorld/Scaled - HelloWorld.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Monitoring/Monitoring.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scaled - HelloWorld/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Monitoring/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scaled - HelloWorld/obj/Debug/net7.0/Scaled - HelloWolrd.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scaled - HelloWorld/obj/Debug/net7.0/Scaled - HelloWolrd.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scaled - HelloWorld/obj/Debug/net7.0/Scaled - HelloWolrd.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scaled - HelloWorld/obj/Debug/net7.0/Scaled - HelloWolrd.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scaled - HelloWorld/obj/Debug/net7.0/Scaled - HelloWolrd.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scaled - HelloWorld/obj/Debug/net7.0/Scaled - HelloWorld.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scaled - HelloWorld/obj/Debug/net7.0/Scaled - HelloWorld.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scaled - HelloWorld/obj/Debug/net7.0/Scaled - HelloWorld.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scaled - HelloWorld/obj/Debug/net7.0/Scaled - HelloWorld.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scaled - HelloWorld/obj/Debug/net7.0/Scaled - HelloWorld.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scaled - HelloWorld/obj/Debug/net7.0/Scaled - HelloWorld.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scaled - HelloWorld/obj/Scaled - HelloWolrd.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scaled - HelloWorld/obj/Scaled - HelloWolrd.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scaled - HelloWorld/obj/Scaled - HelloWolrd.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scaled - HelloWorld/obj/Scaled - HelloWorld.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scaled - HelloWorld/obj/Scaled - HelloWorld.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scaled - HelloWorld/obj/Scaled - HelloWorld.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scaled - HelloWorld/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Monitoring/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scaled - HelloWorld/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Monitoring/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scaled - HelloWorld/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scaled - HelloWorld/obj/rider.project.model.nuget.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scaled - HelloWorld/obj/rider.project.restore.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SubtractService/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/SubtractService/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/Controllers/HomeController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/Models/ErrorViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/Views/Home/Index.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/Views/Home/Privacy.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/Views/Shared/Error.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/Views/Shared/_Layout.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/Views/Shared/_Layout.cshtml.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/Views/Shared/_ValidationScriptsPartial.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/Views/_ViewImports.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/Views/_ViewStart.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/WebService.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/obj/Debug/net7.0/WebService.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/obj/Debug/net7.0/WebService.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/obj/Debug/net7.0/WebService.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/obj/Debug/net7.0/WebService.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/obj/Debug/net7.0/WebService.RazorAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/obj/Debug/net7.0/WebService.RazorAssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/obj/Debug/net7.0/WebService.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/obj/WebService.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/obj/WebService.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/obj/WebService.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/obj/rider.project.model.nuget.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/obj/rider.project.restore.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/css/site.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/js/site.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/jquery-validation/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/jquery-validation/dist/additional-methods.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/jquery-validation/dist/jquery.validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/jquery/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/jquery/dist/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/jquery/dist/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebService/wwwroot/lib/jquery/dist/jquery.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +159,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/WebService/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/AddService/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Monitoring/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -90,7 +211,7 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Scaled - HelloWorld/Scaled - HelloWorld.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Monitoring/Monitoring.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -405,6 +526,18 @@
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
+    <configuration name="Monitoring/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="monitoring" />
+          <option name="containerName" value="monitoring" />
+          <option name="contextFolderPath" value="C:\Users\Tobias\Dropbox\Files\Dannelse\Softwareudvikling - online\Programmering\Docker\HelloWorld" />
+          <option name="sourceFilePath" value="Monitoring/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
     <configuration name="Scaled - HelloWolrd/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
@@ -580,7 +713,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699209167513</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="frontend sucks">
+      <option name="closed" value="true" />
+      <created>1699212104514</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1699212104514</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -593,6 +734,7 @@
     <MESSAGE value="Gui fixes" />
     <MESSAGE value="ok" />
     <MESSAGE value=".. ajax er squ da noget lort.. :)" />
-    <option name="LAST_COMMIT_MESSAGE" value=".. ajax er squ da noget lort.. :)" />
+    <MESSAGE value="frontend sucks" />
+    <option name="LAST_COMMIT_MESSAGE" value="frontend sucks" />
   </component>
 </project>

@@ -1,7 +1,5 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scaled - HelloWorld", "Scaled - HelloWorld\Scaled - HelloWorld.csproj", "{62541F06-00D1-466E-938A-A5A0F3CD35AC}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CF6FBEF8-EC48-47D4-A17C-58874792FCCC}"
 	ProjectSection(SolutionItems) = preProject
 		docker-compose.yml = docker-compose.yml
@@ -15,16 +13,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculationService", "Calcu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorService", "CalculatorService\CalculatorService.csproj", "{1942D793-D58E-47FA-9BA9-C6BF3842CC48}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitoring", "Monitoring\Monitoring.csproj", "{CE17F608-1CCF-4296-AF5F-0059ADC8C66F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{62541F06-00D1-466E-938A-A5A0F3CD35AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{62541F06-00D1-466E-938A-A5A0F3CD35AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{62541F06-00D1-466E-938A-A5A0F3CD35AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{62541F06-00D1-466E-938A-A5A0F3CD35AC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7B73E16E-ABE9-4F06-94B3-C378C9C033F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7B73E16E-ABE9-4F06-94B3-C378C9C033F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B73E16E-ABE9-4F06-94B3-C378C9C033F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -41,5 +37,9 @@ Global
 		{1942D793-D58E-47FA-9BA9-C6BF3842CC48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1942D793-D58E-47FA-9BA9-C6BF3842CC48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1942D793-D58E-47FA-9BA9-C6BF3842CC48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE17F608-1CCF-4296-AF5F-0059ADC8C66F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE17F608-1CCF-4296-AF5F-0059ADC8C66F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE17F608-1CCF-4296-AF5F-0059ADC8C66F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE17F608-1CCF-4296-AF5F-0059ADC8C66F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
