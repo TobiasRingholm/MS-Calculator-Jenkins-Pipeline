@@ -6,6 +6,7 @@ using Monitoring;
 using OpenTelemetry;
 using OpenTelemetry.Context.Propagation;
 using Serilog;
+using SharedModel;
 
 namespace CalculatorGUIService.Controllers;
 
@@ -36,8 +37,42 @@ public class HomeController : Controller
 
     public IActionResult Privacy()
     {
-        return View();
+        using var activity = MonitoringService.ActivitySource.StartActivity();
+        MonitoringService.Log.Here().Debug("Entered load history method");
+
+        var calculationsList = FetchAllCalculations();
+        var displayList = calculationsList.Select(calc => 
+            $"ID: {calc.ID}, Value1: {calc.Value1}, Value2: {calc.Value2}, Result: {calc.Result}, Operator: {calc.MathOperator}"
+        ).ToList();
+
+        var viewModel = new CalculationViewModel
+        {
+            CalculationsDisplay = displayList
+        };
+
+        return View(viewModel);
     }
+
+    
+    [HttpPost]
+    public IActionResult Privacy(ParseExpression parseExpression)
+    {
+        using var activity = MonitoringService.ActivitySource.StartActivity();
+        MonitoringService.Log.Here().Debug("Entered load history method");
+        using (MonitoringService.Log.Here().BeginTimedOperation("Running load history from db in gui"))
+        {
+            var list = FetchAllCalculations();
+            var allCalculations = FetchAllCalculations();
+            if (allCalculations != null)
+                foreach (var calculation in allCalculations)
+                {
+                    Console.WriteLine(
+                        $"ID: {calculation.ID}, Value1: {calculation.Value1}, Value2: {calculation.Value2}, Result: {calculation.Result}, Operator: {calculation.MathOperator}");
+                }
+            ViewData["history"] = list;
+        }
+        return View();
+    }   
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
@@ -59,6 +94,23 @@ public class HomeController : Controller
         });
         var result = task.Result;
         
+        return result;
+    }
+    
+    private static List<Calculation>? FetchAllCalculations()
+    {
+        using var activity = MonitoringService.ActivitySource.StartActivity();
+        MonitoringService.Log.Here().Debug("Entered FetchAllCalculations method");
+        var task = RestClient.PostAsync<List<Calculation>>(new RestRequest($"Calculation"));
+        
+        var activityContext = activity?.Context ?? Activity.Current?.Context ?? default;
+        var propagationContext = new PropagationContext(activityContext, Baggage.Current);
+        var propagator = new TraceContextPropagator();
+        propagator.Inject(propagationContext, task, (r, key, value) =>
+        {
+            //r.Header(key, value);
+        });
+        var result = task.Result;
         return result;
     }
 }

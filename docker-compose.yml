@@ -4,13 +4,14 @@
       context: .
       dockerfile: AddService/Dockerfile
     deploy:
-      replicas: 2
+      replicas: 3
   subtract-service:
     build:
       context: .
       dockerfile: SubtractService/Dockerfile
     deploy:
-      replicas: 2
+      replicas: 3
+
   calculation-service:
     build:
       context: .
@@ -18,6 +19,7 @@
     depends_on:
       - add-service
       - subtract-service
+      - calculation-history-service
   calculator-service:
     build:
       context: .
@@ -26,21 +28,23 @@
       - calculation-service
     ports:
       - 8080:80
+
     
   seq:
     image: datalust/seq
     ports:
-      - 5341:5341
-      - 5342:5342
+      - "5341:5341"
+      - "5342:80"
     volumes:
       - rps_seq_data:/data
     environment:
       - ACCEPT_EULA=Y
+
   
   zipkin:
     image: openzipkin/zipkin
     ports:
-      - 9411:9411
+      - "9411:9411"
     environment:
       - STORAGE_TYPE=mysql
       - MYSQL_HOST=zipkin-storage
@@ -49,15 +53,37 @@
       - MYSQL_DB=zipkin
     depends_on:
       - zipkin-storage
+ 
   
   zipkin-storage:
     image: openzipkin/zipkin-mysql
     ports: 
-      - 3306:3306
+      - "3306:3306"
     volumes:
       - zipkin_data:/mysql/data
+
+    
+  calculation-history-service:
+    build:
+      context: .
+      dockerfile: CalculationHistoryService/Dockerfile
+    depends_on:
+      - cache-db
+    deploy:
+      replicas: 2
+ 
+        
+  cache-db:
+    image: "mysql"
+    environment:
+      MYSQL_DATABASE: "cache-database"
+      MYSQL_USER: "div-cache"
+      MYSQL_PASSWORD: "C@ch3d1v"
+      MYSQL_RANDOM_ROOT_PASSWORD: "yes"
+
     
 volumes:
   rps_seq_data:
   zipkin_data:
+
  

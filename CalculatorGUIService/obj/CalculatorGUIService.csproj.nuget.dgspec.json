@@ -30,6 +30,9 @@
             "projectReferences": {
               "C:\\Users\\Tobias\\Dropbox\\Files\\Dannelse\\Softwareudvikling - online\\Programmering\\Docker\\HelloWorld\\Monitoring\\Monitoring.csproj": {
                 "projectPath": "C:\\Users\\Tobias\\Dropbox\\Files\\Dannelse\\Softwareudvikling - online\\Programmering\\Docker\\HelloWorld\\Monitoring\\Monitoring.csproj"
+              },
+              "C:\\Users\\Tobias\\Dropbox\\Files\\Dannelse\\Softwareudvikling - online\\Programmering\\Docker\\HelloWorld\\SharedModel\\SharedModel.csproj": {
+                "projectPath": "C:\\Users\\Tobias\\Dropbox\\Files\\Dannelse\\Softwareudvikling - online\\Programmering\\Docker\\HelloWorld\\SharedModel\\SharedModel.csproj"
               }
             }
           }
@@ -110,19 +113,19 @@
           "dependencies": {
             "OpenTelemetry": {
               "target": "Package",
-              "version": "[1.7.0-alpha.1, )"
+              "version": "[1.6.0, )"
             },
             "OpenTelemetry.Exporter.Console": {
               "target": "Package",
-              "version": "[1.7.0-alpha.1, )"
+              "version": "[1.6.0, )"
             },
             "OpenTelemetry.Exporter.Zipkin": {
               "target": "Package",
-              "version": "[1.7.0-alpha.1, )"
+              "version": "[1.6.0, )"
             },
             "Serilog": {
               "target": "Package",
-              "version": "[3.1.0-dev-02086, )"
+              "version": "[2.12.0, )"
             },
             "Serilog.Enrichers.Span": {
               "target": "Package",
@@ -130,17 +133,72 @@
             },
             "Serilog.Sinks.Console": {
               "target": "Package",
-              "version": "[5.0.0-dev-00923, )"
+              "version": "[4.1.0, )"
             },
             "Serilog.Sinks.Seq": {
               "target": "Package",
-              "version": "[6.0.0-dev-00268, )"
+              "version": "[5.2.2, )"
             },
             "SerilogMetrics": {
               "target": "Package",
               "version": "[2.1.0, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Tobias\\Dropbox\\Files\\Dannelse\\Softwareudvikling - online\\Programmering\\Docker\\HelloWorld\\SharedModel\\SharedModel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Tobias\\Dropbox\\Files\\Dannelse\\Softwareudvikling - online\\Programmering\\Docker\\HelloWorld\\SharedModel\\SharedModel.csproj",
+        "projectName": "SharedModel",
+        "projectPath": "C:\\Users\\Tobias\\Dropbox\\Files\\Dannelse\\Softwareudvikling - online\\Programmering\\Docker\\HelloWorld\\SharedModel\\SharedModel.csproj",
+        "packagesPath": "C:\\Users\\Tobias\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tobias\\Dropbox\\Files\\Dannelse\\Softwareudvikling - online\\Programmering\\Docker\\HelloWorld\\SharedModel\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Tobias\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
           "imports": [
             "net461",
             "net462",

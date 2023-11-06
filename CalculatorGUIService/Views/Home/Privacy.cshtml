@@ -1,6 +1,15 @@
-﻿@{
-    ViewData["Title"] = "Privacy Policy";
-}
-<h1>@ViewData["Title"]</h1>
+﻿@model CalculationViewModel
 
-<p>Use this page to detail your site's privacy policy.</p>
+@{
+    ViewData["Title"] = "Calculation History";
+}
+
+<form asp-action="Privacy">
+    <div class="text-center">
+        <h1 class="display-4">Calculation History</h1>
+        <p>
+            <!-- Here we create a new SelectList from the model's CalculationsDisplay property -->
+            <select asp-items="@(new SelectList(Model.CalculationsDisplay))" size="10"></select>
+        </p>
+    </div>
+</form>

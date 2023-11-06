@@ -1,0 +1,11 @@
+C:\Users\Tobias\Dropbox\Files\Dannelse\Softwareudvikling - online\Programmering\Docker\HelloWorld\SharedModel\bin\Debug\net7.0\SharedModel.deps.json
+C:\Users\Tobias\Dropbox\Files\Dannelse\Softwareudvikling - online\Programmering\Docker\HelloWorld\SharedModel\bin\Debug\net7.0\SharedModel.dll
+C:\Users\Tobias\Dropbox\Files\Dannelse\Softwareudvikling - online\Programmering\Docker\HelloWorld\SharedModel\bin\Debug\net7.0\SharedModel.pdb
+C:\Users\Tobias\Dropbox\Files\Dannelse\Softwareudvikling - online\Programmering\Docker\HelloWorld\SharedModel\obj\Debug\net7.0\SharedModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tobias\Dropbox\Files\Dannelse\Softwareudvikling - online\Programmering\Docker\HelloWorld\SharedModel\obj\Debug\net7.0\SharedModel.AssemblyInfoInputs.cache
+C:\Users\Tobias\Dropbox\Files\Dannelse\Softwareudvikling - online\Programmering\Docker\HelloWorld\SharedModel\obj\Debug\net7.0\SharedModel.AssemblyInfo.cs
+C:\Users\Tobias\Dropbox\Files\Dannelse\Softwareudvikling - online\Programmering\Docker\HelloWorld\SharedModel\obj\Debug\net7.0\SharedModel.csproj.CoreCompileInputs.cache
+C:\Users\Tobias\Dropbox\Files\Dannelse\Softwareudvikling - online\Programmering\Docker\HelloWorld\SharedModel\obj\Debug\net7.0\SharedModel.dll
+C:\Users\Tobias\Dropbox\Files\Dannelse\Softwareudvikling - online\Programmering\Docker\HelloWorld\SharedModel\obj\Debug\net7.0\refint\SharedModel.dll
+C:\Users\Tobias\Dropbox\Files\Dannelse\Softwareudvikling - online\Programmering\Docker\HelloWorld\SharedModel\obj\Debug\net7.0\SharedModel.pdb
+C:\Users\Tobias\Dropbox\Files\Dannelse\Softwareudvikling - online\Programmering\Docker\HelloWorld\SharedModel\obj\Debug\net7.0\ref\SharedModel.dll
