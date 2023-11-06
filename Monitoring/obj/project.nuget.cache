@@ -1,11 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "eQqznLuJQfRwGyruaz7rdmyE66hLnGKGsXBpt4Rl8VXymGdo2C9+nbPw2o6uZUr3T5HVn/OPWuWxJRCwnL5iZQ==",
+  "dgSpecHash": "/F+EHm8LljMU4vTMP8jOa95CIk991XBbK47T7RusC9DC4l9HgN2IkW+z6s9VF8Z1hrQcdURXhMJRL16R3RiU+w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tobias\\Dropbox\\Files\\Dannelse\\Softwareudvikling - online\\Programmering\\Docker\\HelloWorld\\CalculationService\\CalculationService.csproj",
+  "projectFilePath": "C:\\Users\\Tobias\\Dropbox\\Files\\Dannelse\\Softwareudvikling - online\\Programmering\\Docker\\HelloWorld\\Monitoring\\Monitoring.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.13\\microsoft.aspnetcore.openapi.7.0.13.nupkg.sha512",
-    "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.0\\microsoft.extensions.configuration.3.1.0.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.0\\microsoft.extensions.configuration.abstractions.3.1.0.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.0\\microsoft.extensions.configuration.binder.3.1.0.nupkg.sha512",
@@ -17,13 +15,11 @@
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.extensions.options\\8.0.0-rc.1.23419.4\\microsoft.extensions.options.8.0.0-rc.1.23419.4.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\3.1.0\\microsoft.extensions.options.configurationextensions.3.1.0.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0-rc.1.23419.4\\microsoft.extensions.primitives.8.0.0-rc.1.23419.4.nupkg.sha512",
-    "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\opentelemetry\\1.7.0-alpha.1\\opentelemetry.1.7.0-alpha.1.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\opentelemetry.api\\1.7.0-alpha.1\\opentelemetry.api.1.7.0-alpha.1.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\opentelemetry.api.providerbuilderextensions\\1.7.0-alpha.1\\opentelemetry.api.providerbuilderextensions.1.7.0-alpha.1.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\opentelemetry.exporter.console\\1.7.0-alpha.1\\opentelemetry.exporter.console.1.7.0-alpha.1.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\opentelemetry.exporter.zipkin\\1.7.0-alpha.1\\opentelemetry.exporter.zipkin.1.7.0-alpha.1.nupkg.sha512",
-    "C:\\Users\\Tobias\\.nuget\\packages\\restsharp\\110.2.1-alpha.0.16\\restsharp.110.2.1-alpha.0.16.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\serilog\\3.1.0-dev-02086\\serilog.3.1.0-dev-02086.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\serilog.enrichers.span\\3.1.0\\serilog.enrichers.span.3.1.0.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\serilog.formatting.compact\\2.0.0-dev-00961\\serilog.formatting.compact.2.0.0-dev-00961.nupkg.sha512",
@@ -32,13 +28,9 @@
     "C:\\Users\\Tobias\\.nuget\\packages\\serilog.sinks.periodicbatching\\3.1.0\\serilog.sinks.periodicbatching.3.1.0.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\serilog.sinks.seq\\6.0.0-dev-00268\\serilog.sinks.seq.6.0.0-dev-00268.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\serilogmetrics\\2.1.0\\serilogmetrics.2.1.0.nupkg.sha512",
-    "C:\\Users\\Tobias\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
-    "C:\\Users\\Tobias\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
-    "C:\\Users\\Tobias\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
-    "C:\\Users\\Tobias\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\system.diagnostics.diagnosticsource\\7.0.2\\system.diagnostics.diagnosticsource.7.0.2.nupkg.sha512",
-    "C:\\Users\\Tobias\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\Tobias\\.nuget\\packages\\system.text.json\\7.0.3\\system.text.json.7.0.3.nupkg.sha512"
+    "C:\\Users\\Tobias\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
+    "C:\\Users\\Tobias\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
   ],
   "logs": []
 }

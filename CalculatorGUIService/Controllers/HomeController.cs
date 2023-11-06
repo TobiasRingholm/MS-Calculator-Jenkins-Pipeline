@@ -2,6 +2,10 @@
 using Microsoft.AspNetCore.Mvc;
 using CalculatorGUIService.Models;
 using RestSharp;
+using Monitoring;
+using OpenTelemetry;
+using OpenTelemetry.Context.Propagation;
+using Serilog;
 
 namespace CalculatorGUIService.Controllers;
 
@@ -22,7 +26,11 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult Index(ParseExpression parseExpression)
     {
+        using var activity = MonitoringService.ActivitySource.StartActivity();
+        MonitoringService.Log.Here().Debug("Entered Expression-Parser method");
+        using (MonitoringService.Log.Here().BeginTimedOperation("Running Expression-Parser")){
         ViewData["result"] = FetchCalculation(parseExpression.value1, parseExpression.value2, parseExpression.calculate);
+        }
         return View();
     }   
 
@@ -39,7 +47,18 @@ public class HomeController : Controller
     
     private static double? FetchCalculation(double numberA, double numberB, string calculation)
     {
+        using var activity = MonitoringService.ActivitySource.StartActivity();
+        MonitoringService.Log.Here().Debug("Entered FetchCalculation method");
         var task = RestClient.GetAsync<double>(new RestRequest($"Calculation?numberA={numberA}&numberB={numberB}&calculation={calculation}"));
-        return task.Result;
+        var activityContext = activity?.Context ?? Activity.Current?.Context ?? default;
+        var propagationContext = new PropagationContext(activityContext, Baggage.Current);
+        var propagator = new TraceContextPropagator();
+        propagator.Inject(propagationContext, task, (r, key, value) =>
+        {
+            //r.Header(key, value);
+        });
+        var result = task.Result;
+        
+        return result;
     }
 }
