@@ -39,7 +39,7 @@ public class CalculationController : ControllerBase
         return FetchCalculationHistory();
     }
     
-    private static double? FetchSubtract(double numberA, double numberB)
+    private double? FetchSubtract(double numberA, double numberB)
     {
         using var activity = MonitoringService.ActivitySource.StartActivity();
         MonitoringService.Log.Here().Debug("Entered FetchSubtract method");
@@ -47,7 +47,7 @@ public class CalculationController : ControllerBase
         return task.Result;
     }
     
-    private static double? FetchAdd(double numberA, double numberB)
+    private double? FetchAdd(double numberA, double numberB)
     {
         using var activity = MonitoringService.ActivitySource.StartActivity();
         MonitoringService.Log.Here().Debug("Entered FetchAdd method");
