@@ -29,6 +29,7 @@
     depends_on:
       - add-service
       - subtract-service
+      - multiply-service
       - calculation-history-service
       - featurehub
   calculator-service:
