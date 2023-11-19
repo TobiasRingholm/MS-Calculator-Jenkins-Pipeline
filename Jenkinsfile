@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage("Build"){
             steps {
-                echo "Så bygger vi!"
+                sh "docker compose build"
             }
         }
         stage("Test"){
@@ -16,7 +16,9 @@ pipeline{
         }
         stage("Deliver"){
             steps {
-                echo "Så afleverer vi!"
+                withCredentials([usernamePassword(credentialsId: 'Dockerhub', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]){
+                sh 'docker login -u $USERNAME -p $PASSWORD'
+                sh "docker compose push"}
             }
         }
     

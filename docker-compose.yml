@@ -3,12 +3,14 @@
     build:
       context: .
       dockerfile: AddService/Dockerfile
+    image: tobias/calculator-add:$BUILD_NUMBER
     deploy:
       replicas: 3
   subtract-service:
     build:
       context: .
       dockerfile: SubtractService/Dockerfile
+    image: tobias/calculator-subtract:$BUILD_NUMBER
     deploy:
       replicas: 3
 
@@ -16,6 +18,7 @@
     build:
       context: .
       dockerfile: CalculationService/Dockerfile
+    image: tobias/calculator-calculation:$BUILD_NUMBER
     depends_on:
       - add-service
       - subtract-service
@@ -24,6 +27,7 @@
     build:
       context: .
       dockerfile: CalculatorGUIService/Dockerfile
+    image: tobias/calculator-calculator:$BUILD_NUMBER
     depends_on:
       - calculation-service
     ports:
@@ -67,6 +71,7 @@
     build:
       context: .
       dockerfile: CalculationHistoryService/Dockerfile
+    image: tobias/calculator-history:$BUILD_NUMBER
     depends_on:
       - cache-db
     deploy:
