@@ -21,7 +21,11 @@ pipeline{
         }
         stage("Deploy"){
             steps {                        
-                bat "docker compose up --build"}
+                echo "Så deployer vi!"}
                 }
             }
-    }
+    post { 
+        success { 
+            bat "docker compose up --build"}  
+        }
+}

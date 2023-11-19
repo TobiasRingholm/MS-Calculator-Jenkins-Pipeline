@@ -13,6 +13,13 @@
     image: tobias/calculator-subtract:$BUILD_NUMBER
     deploy:
       replicas: 3
+  multiplyservice:
+    build:
+      context: .
+      dockerfile: MultiplyService/Dockerfile
+    image: tobias/calculator-multiply:$BUILD_NUMBER
+    deploy:
+      replicas: 3
 
   calculation-service:
     build:
@@ -23,6 +30,7 @@
       - add-service
       - subtract-service
       - calculation-history-service
+      - featurehub
   calculator-service:
     build:
       context: .
@@ -101,3 +109,4 @@ volumes:
   featurehub-h2-data:
 
  
+
