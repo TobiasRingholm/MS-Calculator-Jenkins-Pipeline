@@ -31,7 +31,7 @@
     depends_on:
       - calculation-service
     ports:
-      - 8080:80
+      - 8000:80
 
     
   seq:
@@ -85,10 +85,19 @@
       MYSQL_USER: "div-cache"
       MYSQL_PASSWORD: "C@ch3d1v"
       MYSQL_RANDOM_ROOT_PASSWORD: "yes"
+      
+  featurehub:
+    image: featurehub/party-server:latest
+    restart: always
+    volumes:
+      - featurehub-h2-data:/db
+    ports:
+      - 8085:8085
 
-    
+
 volumes:
   rps_seq_data:
   zipkin_data:
+  featurehub-h2-data:
 
  
