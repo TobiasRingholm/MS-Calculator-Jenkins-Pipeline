@@ -13,7 +13,7 @@
     image: tobias/calculator-subtract:$BUILD_NUMBER
     deploy:
       replicas: 3
-  multiplyservice:
+  multiply-service:
     build:
       context: .
       dockerfile: MultiplyService/Dockerfile
