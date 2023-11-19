@@ -16,12 +16,14 @@ pipeline{
         }
         stage("Deliver"){
             steps {
-                    bat "docker compose push"
+                echo "Følgende virker ikke.... withCredentials([usernamePassword(credentialsId: 'DockerHub', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]){
+                    bat "echo %PASSWORD% | docker login -u %USERNAME% --password-stdin"
+                    bat "docker compose push""
             }
         }
         stage("Deploy"){
             steps {                        
-                bat "docker compose up"}
+                bat "docker compose up --build"}
                 }
             }
     }
