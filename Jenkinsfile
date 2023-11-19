@@ -21,6 +21,10 @@ pipeline{
                 bat "docker compose push"}
             }
         }
-    
+        stage("Deploy"){
+            steps {                        
+                bat "docker compose up"}
+                }
+            }
     }
 }
