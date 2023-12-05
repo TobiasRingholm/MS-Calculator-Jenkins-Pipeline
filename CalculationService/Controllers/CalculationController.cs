@@ -33,46 +33,46 @@ public class CalculationController : ControllerBase
         if (calculation == "Add")
         {
             var retryPolicy = Policy.Handle<Exception>()
-                .Retry(3);
+                .RetryAsync(3);
 
             var circuitBreakerPolicy = Policy.Handle<Exception>()
-                .CircuitBreaker(3, TimeSpan.FromSeconds(30));
+                .CircuitBreakerAsync(3, TimeSpan.FromSeconds(30));
 
-            var policy = retryPolicy.Wrap(circuitBreakerPolicy);
+            var policy = Policy.WrapAsync(retryPolicy, circuitBreakerPolicy);
 
-            policy.Execute(async () =>
+            result = (double)await policy.ExecuteAsync(async () =>
             {
-            result = (double)await FetchAddAsync(numberA, numberB);
+                return await FetchAddAsync(numberA, numberB);
             });
         }
         else if (calculation == "Subtract")
         {
             var retryPolicy = Policy.Handle<Exception>()
-                .Retry(3);
+                .RetryAsync(3);
 
             var circuitBreakerPolicy = Policy.Handle<Exception>()
-                .CircuitBreaker(3, TimeSpan.FromSeconds(30));
+                .CircuitBreakerAsync(3, TimeSpan.FromSeconds(30));
 
-            var policy = retryPolicy.Wrap(circuitBreakerPolicy);
+            var policy = Policy.WrapAsync(retryPolicy, circuitBreakerPolicy);
 
-            policy.Execute(async () =>
+            result = (double)await policy.ExecuteAsync(async () =>
             {
-            result = (double)await FetchSubtractAsync(numberA, numberB);
+                return await FetchSubtractAsync(numberA, numberB);
             });
         }
         else if (calculation == "Multiply" && multiplyFeature)
         {
             var retryPolicy = Policy.Handle<Exception>()
-                .Retry(3);
+                .RetryAsync(3);
 
             var circuitBreakerPolicy = Policy.Handle<Exception>()
-                .CircuitBreaker(3, TimeSpan.FromSeconds(30));
+                .CircuitBreakerAsync(3, TimeSpan.FromSeconds(30));
 
-            var policy = retryPolicy.Wrap(circuitBreakerPolicy);
+            var policy = Policy.WrapAsync(retryPolicy, circuitBreakerPolicy);
 
-            policy.Execute(async () =>
+            result = (double)await policy.ExecuteAsync(async () =>
             {
-            result = (double)await FetchMultiplyAsync(numberA, numberB);
+                return await FetchMultiplyAsync(numberA, numberB);
             });
         }
 
@@ -82,6 +82,7 @@ public class CalculationController : ControllerBase
         }
 
         return result;
+
     }
 
     [HttpPost]
