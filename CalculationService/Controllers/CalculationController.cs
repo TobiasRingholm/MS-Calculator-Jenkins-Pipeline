@@ -147,7 +147,7 @@ public class CalculationController : ControllerBase
 
     private async Task<IClientContext> ConfigureFeatureHub()
     {
-        var config = new EdgeFeatureHubConfig("http://featurehub:8085", "6b67b572-afc1-42f5-a58e-58bbe03b7765/z2YCy3Vw9tOW3VsqeSO95HbXEmlkrohFGjGB086o");
+        var config = new EdgeFeatureHubConfig("http://featurehub:8085", "fe9d55a3-b1cc-4db0-8c37-f7d769691a2e/GPMph3M7fTF6YNs0rkyiGp7USG0Q878oRSYwuv2u");
         var fh = await config.NewContext().Build();
         return fh;
     }
