@@ -11,7 +11,7 @@ pipeline{
         }
         stage("Test"){
             steps {
-                bat "Running tests..."
+                echo "Running tests..."
             }
         }
         stage("Deliver"){
