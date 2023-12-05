@@ -1,7 +1,7 @@
 pipeline{
     agent any
     triggers {
-        pollSCM("* * * * *")
+        pollSCM("* * * * *") 
     }
     stages{
         stage("Build"){
@@ -11,19 +11,19 @@ pipeline{
         }
         stage("Test"){
             steps {
-                echo "Så tester vi!"
+                echo "Running tests..."
             }
         }
         stage("Deliver"){
             steps {
-                withCredentials([usernamePassword(credentialsId: 'docker-hub-credentials-id', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
-                    bat 'echo %DOCKER_PASSWORD%| docker login --username %DOCKER_USERNAME% --password-stdin'
+                withCredentials([usernamePassword(credentialsId: 'DockerHub', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
+                    bat 'echo %DOCKER_PASSWORD%|docker login --username %DOCKER_USERNAME% --password-stdin'
                 }
             }
         }
         stage("Deploy"){
             steps {                        
-                echo "Så deployer vi!"
+                echo "Deploying application..."
             }
         }
     }
