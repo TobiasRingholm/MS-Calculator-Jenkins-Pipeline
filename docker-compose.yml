@@ -3,7 +3,7 @@
     build:
       context: .
       dockerfile: AddMiniService/Dockerfile
-    image: tobias/calculator-add
+    image: ringholm/calculator-add
     deploy:
       replicas: 3
     networks:
@@ -13,7 +13,7 @@
     build:
       context: .
       dockerfile: SubtractService/Dockerfile
-    image: tobias/calculator-subtract
+    image: ringholm/calculator-subtract
     deploy:
       replicas: 3
     networks:
@@ -23,7 +23,7 @@
     build:
       context: .
       dockerfile: MultiplyService/Dockerfile
-    image: tobias/calculator-multiply
+    image: ringholm/calculator-multiply
     deploy:
       replicas: 3
     networks:
@@ -33,7 +33,7 @@
     build:
       context: .
       dockerfile: CalculationService/Dockerfile
-    image: tobias/calculator-calculation
+    image: ringholm/calculator-calculation
     networks:
       - calcnetwork
     
@@ -41,7 +41,7 @@
     build:
       context: .
       dockerfile: CalculatorGUIService/Dockerfile
-    image: tobias/calculator-calculator
+    image: ringholm/calculator-calculator
     ports:
       - 8000:80
     networks:
@@ -91,7 +91,7 @@
     build:
       context: .
       dockerfile: CalculationHistoryService/Dockerfile
-    image: tobias/calculator-history
+    image: ringholm/calculator-history
     depends_on:
       - cache-db
     deploy:

@@ -11,7 +11,7 @@ pipeline{
         }
         stage("Test"){
             steps {
-                echo "Running tests..."
+                bat "Running tests..."
             }
         }
         stage("Deliver"){
@@ -24,7 +24,7 @@ pipeline{
         }
         stage("Deploy"){
             steps {                        
-                echo "Deploying application..."
+                bat "docker-compose -f docker-compose.yml up -d "
             }
         }
     }
