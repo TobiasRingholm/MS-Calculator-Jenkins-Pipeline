@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage("Build"){
             steps {
-                bat "docker compose build"
+                bat "docker-compose build"
             }
         }
         stage("Test"){
@@ -17,16 +17,14 @@ pipeline{
         stage("Deliver"){
             steps {
                 withCredentials([usernamePassword(credentialsId: 'docker-hub-credentials-id', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
-                bat 'echo $DOCKER_PASSWORD | docker login --username $DOCKER_USERNAME --password-stdin'
+                    bat 'echo %DOCKER_PASSWORD%| docker login --username %DOCKER_USERNAME% --password-stdin'
+                }
             }
         }
         stage("Deploy"){
             steps {                        
-                echo "Så deployer vi!"}
-                }
+                echo "Så deployer vi!"
             }
-    post { 
-        success { 
-            bat "docker compose up --build"}  
         }
+    }
 }
