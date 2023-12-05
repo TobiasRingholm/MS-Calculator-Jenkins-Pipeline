@@ -16,7 +16,8 @@ pipeline{
         }
         stage("Deliver"){
             steps {
-                echo "Så afleverer vi!"
+                withCredentials([usernamePassword(credentialsId: 'docker-hub-credentials-id', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
+                bat 'echo $DOCKER_PASSWORD | docker login --username $DOCKER_USERNAME --password-stdin'
             }
         }
         stage("Deploy"){

@@ -2,45 +2,50 @@
   add-service:
     build:
       context: .
-      dockerfile: AddService/Dockerfile
-    image: tobias/calculator-add:$BUILD_NUMBER
+      dockerfile: AddMiniService/Dockerfile
+    image: tobias/calculator-add
     deploy:
       replicas: 3
+    networks:
+      - calcnetwork
+
   subtract-service:
     build:
       context: .
       dockerfile: SubtractService/Dockerfile
-    image: tobias/calculator-subtract:$BUILD_NUMBER
+    image: tobias/calculator-subtract
     deploy:
       replicas: 3
+    networks:
+      - calcnetwork
+    
   multiply-service:
     build:
       context: .
       dockerfile: MultiplyService/Dockerfile
-    image: tobias/calculator-multiply:$BUILD_NUMBER
+    image: tobias/calculator-multiply
     deploy:
       replicas: 3
+    networks:
+      - calcnetwork
 
   calculation-service:
     build:
       context: .
       dockerfile: CalculationService/Dockerfile
-    image: tobias/calculator-calculation:$BUILD_NUMBER
-    depends_on:
-      - add-service
-      - subtract-service
-      - multiply-service
-      - calculation-history-service
-      - featurehub
+    image: tobias/calculator-calculation
+    networks:
+      - calcnetwork
+    
   calculator-service:
     build:
       context: .
       dockerfile: CalculatorGUIService/Dockerfile
-    image: tobias/calculator-calculator:$BUILD_NUMBER
-    depends_on:
-      - calculation-service
+    image: tobias/calculator-calculator
     ports:
       - 8000:80
+    networks:
+      - calcnetwork
 
     
   seq:
@@ -52,6 +57,8 @@
       - rps_seq_data:/data
     environment:
       - ACCEPT_EULA=Y
+    networks:
+      - calcnetwork
 
   
   zipkin:
@@ -66,6 +73,8 @@
       - MYSQL_DB=zipkin
     depends_on:
       - zipkin-storage
+    networks:
+      - calcnetwork
  
   
   zipkin-storage:
@@ -74,17 +83,21 @@
       - "3306:3306"
     volumes:
       - zipkin_data:/mysql/data
+    networks:
+      - calcnetwork
 
     
   calculation-history-service:
     build:
       context: .
       dockerfile: CalculationHistoryService/Dockerfile
-    image: tobias/calculator-history:$BUILD_NUMBER
+    image: tobias/calculator-history
     depends_on:
       - cache-db
     deploy:
       replicas: 2
+    networks:
+      - calcnetwork
  
         
   cache-db:
@@ -94,6 +107,8 @@
       MYSQL_USER: "div-cache"
       MYSQL_PASSWORD: "C@ch3d1v"
       MYSQL_RANDOM_ROOT_PASSWORD: "yes"
+    networks:
+      - calcnetwork
       
   featurehub:
     image: featurehub/party-server:latest
@@ -102,12 +117,18 @@
       - featurehub-h2-data:/db
     ports:
       - 8085:8085
+    networks:
+      - calcnetwork
 
 
 volumes:
   rps_seq_data:
   zipkin_data:
   featurehub-h2-data:
+    
+networks:
+  calcnetwork:
+    driver: bridge
 
  
 
