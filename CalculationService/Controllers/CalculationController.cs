@@ -6,6 +6,7 @@ using FeatureHubSDK;
 using System.Diagnostics;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Polly;
 
 namespace CalculationService.Controllers;
 
@@ -31,15 +32,48 @@ public class CalculationController : ControllerBase
         double result = 0;
         if (calculation == "Add")
         {
+            var retryPolicy = Policy.Handle<Exception>()
+                .Retry(3);
+
+            var circuitBreakerPolicy = Policy.Handle<Exception>()
+                .CircuitBreaker(3, TimeSpan.FromSeconds(30));
+
+            var policy = retryPolicy.Wrap(circuitBreakerPolicy);
+
+            policy.Execute(async () =>
+            {
             result = (double)await FetchAddAsync(numberA, numberB);
+            });
         }
         else if (calculation == "Subtract")
         {
+            var retryPolicy = Policy.Handle<Exception>()
+                .Retry(3);
+
+            var circuitBreakerPolicy = Policy.Handle<Exception>()
+                .CircuitBreaker(3, TimeSpan.FromSeconds(30));
+
+            var policy = retryPolicy.Wrap(circuitBreakerPolicy);
+
+            policy.Execute(async () =>
+            {
             result = (double)await FetchSubtractAsync(numberA, numberB);
+            });
         }
         else if (calculation == "Multiply" && multiplyFeature)
         {
+            var retryPolicy = Policy.Handle<Exception>()
+                .Retry(3);
+
+            var circuitBreakerPolicy = Policy.Handle<Exception>()
+                .CircuitBreaker(3, TimeSpan.FromSeconds(30));
+
+            var policy = retryPolicy.Wrap(circuitBreakerPolicy);
+
+            policy.Execute(async () =>
+            {
             result = (double)await FetchMultiplyAsync(numberA, numberB);
+            });
         }
 
         if (result != 0)

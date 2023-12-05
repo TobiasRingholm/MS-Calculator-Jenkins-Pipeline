@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "iQLlLPbMvtGw304KQma5aQr2lBkmCTAOyG3v018DfN+FV9O8ecGUiKtTMN7RLSOSU687rBlZt+dSeYWv3gY64w==",
+  "dgSpecHash": "JTHTK2x5RyBEKjfvXx3cmM70po+gD5V+xVQUACwv3BaTDp1PulUBdfliBK4PgNdge7+AZyOx56atfLmZSujoEw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Tobias\\Dropbox\\Files\\Dannelse\\Softwareudvikling - online\\Programmering\\Docker\\HelloWorld\\CalculationService\\CalculationService.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,8 @@
     "C:\\Users\\Tobias\\.nuget\\packages\\jsonsubtypes\\1.9.0\\jsonsubtypes.1.9.0.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\launchdarkly.eventsource\\3.3.2\\launchdarkly.eventsource.3.3.2.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.13\\microsoft.aspnetcore.openapi.7.0.13.nupkg.sha512",
+    "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
+    "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.bcl.timeprovider\\8.0.0\\microsoft.bcl.timeprovider.8.0.0.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.0\\microsoft.extensions.configuration.3.1.0.nupkg.sha512",
@@ -40,7 +42,8 @@
     "C:\\Users\\Tobias\\.nuget\\packages\\opentelemetry.exporter.console\\1.6.0\\opentelemetry.exporter.console.1.6.0.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\opentelemetry.exporter.zipkin\\1.6.0\\opentelemetry.exporter.zipkin.1.6.0.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\opentelemetry.extensions.hosting\\1.6.0\\opentelemetry.extensions.hosting.1.6.0.nupkg.sha512",
-    "C:\\Users\\Tobias\\.nuget\\packages\\polly\\7.2.3\\polly.7.2.3.nupkg.sha512",
+    "C:\\Users\\Tobias\\.nuget\\packages\\polly\\8.2.0\\polly.8.2.0.nupkg.sha512",
+    "C:\\Users\\Tobias\\.nuget\\packages\\polly.core\\8.2.0\\polly.core.8.2.0.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\polly.extensions.http\\3.0.0\\polly.extensions.http.3.0.0.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\restsharp\\110.2.1-alpha.0.16\\restsharp.110.2.1-alpha.0.16.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
